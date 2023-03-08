@@ -13,7 +13,7 @@ router.delete('/:id', verifyAdmin, deleteTour)
 router.get('/:id', getSingleTour)
 router.get('/', getAllTours)
 router.get('/search/getTourBySearch', getTourBySearch)
-router.get('/search/getFeaturedTour', getFeaturedTours)
+router.get('/search/getFeaturedTours', getFeaturedTours)
 router.get('/search/getTourCount', getTourCount)
 
 export default router
