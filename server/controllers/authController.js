@@ -63,6 +63,7 @@ export const login = async (req, res) => {
         // set token in browser cookies
         res.cookie('accessToken', token, {
             httpOnly: true,
+            // SameSite: Strict,
             expires: token.expiresIn
         }).status(200).json({
             token,
