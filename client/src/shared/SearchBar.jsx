@@ -29,43 +29,47 @@ const SearchBar = () => {
   }
 
   return (
-    <Col lg="12">
+    <Col lg='12'>
       <div className="search__bar">
         <Form className="d-flex align-items-center gap-4">
+
           <FormGroup className="d-flex gap-3 form__group form__group-fast">
             <span>
-              <i className="ri-map-pin-line"></i>
+              <i className="ri-map-pin-line" />
             </span>
             <div>
               <h6>Location</h6>
               <input type="text" placeholder="Where do you wanna go?" ref={locationRef} />
             </div>
           </FormGroup>
+
           <FormGroup className="d-flex gap-3 form__group form__group-fast">
             <span>
-              <i className="ri-map-pin-time-line"></i>
+              <i className="ri-map-pin-time-line" />
             </span>
             <div>
               <h6>Distance</h6>
-              <input type="number" placeholder="Distance in km" ref={distanceRef} />
+              <input type="text" inputMode="numeric" placeholder="Distance in km" ref={distanceRef} />
             </div>
           </FormGroup>
-          <FormGroup className="d-flex gap-3 form__group form__group-fast">
+
+          <FormGroup className="d-flex gap-3 form__group form__group-last">
             <span>
-              <i className="ri-group-line"></i>
+              <i className="ri-group-line" />
             </span>
             <div>
-              <h6># of persons</h6>
-              <input type="number" placeholder="0" ref={maxGroupSizeRef} />
+              <h6>Max # of persons</h6>
+              <input type="text" inputMode="numeric" placeholder="0" ref={maxGroupSizeRef} />
             </div>
           </FormGroup>
 
           <span className="search__icon" type='submit' onClick={searchHandler}>
-            <i className="ri-search-line"></i>
+            <i className="ri-search-line" />
           </span>
         </Form>
       </div>
     </Col>
   );
 };
+
 export default SearchBar;

@@ -18,7 +18,7 @@ const Tours = () => {
   useEffect(() => {
     const pages = Math.ceil(tourCount / 8)
     setPageCount(pages)
-    window.scrollTo(0,0)
+    window.scrollTo(0, 0)
   }, [page, tourCount, tours])
 
 
@@ -46,7 +46,11 @@ const Tours = () => {
             <Row>
               {
                 tours?.map(tour => (
-                  <Col lg='3' className='mb-4' key={tour._id}>
+                  <Col
+                    lg='3' md='6' sm='6'
+                    className='mb-4'
+                    key={tour._id}
+                  >
                     <TourCard tour={tour} />
                   </Col>))
               }

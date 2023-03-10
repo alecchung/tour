@@ -20,7 +20,7 @@ export const creatReview = async (req, res) => {
     } catch (err) {
         res.status(500).json({
             success: false,
-            message: 'failde to submit'
+            message: 'Failed to submit'
         })
     }
 }

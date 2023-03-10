@@ -29,7 +29,8 @@ const Home = () => {
                 <h1>Traveling opens the door to creating{""}
                   <span className="highlight"> memories</span>
                 </h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, culpa? Soluta tenetur, nemo error ipsam quam eaque, ab pariatur vero expedita quia aspernatur recusandae fugiat fugit, harum magni dolorem eius.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Perferendis, culpa? Soluta tenetur, nemo error ipsam quam eaque, ab pariatur vero expedita quia aspernatur recusandae fugiat fugit, harum magni dolorem eius.</p>
               </div>
             </Col>
 
@@ -39,7 +40,7 @@ const Home = () => {
               </div>
             </Col>
             <Col lg='2'>
-              <div className="hero__img-box">
+              <div className="hero__img-box hero__video-box">
                 <video controls preload="auto" autoPlay src={heroVideo} type="video/mp4" />
               </div>
             </Col>
