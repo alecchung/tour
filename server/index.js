@@ -11,10 +11,10 @@ import bookingRoute from './routes/booking.js'
 
 dotenv.config()
 
-const app = express ()
+const app = express()
 const port = process.env.PORT || 8000
 const corsOptions = {
-    origin: ['http://localhost:3000','https://alec-tour.onrender.com'],
+    origin: ['http://localhost:3000', 'https://alec-tour.onrender.com'],
     credentials: true
 }
 
@@ -31,7 +31,6 @@ const connect = async () => {
         console.log(err);
     }
 }
-
 
 //middleware
 app.use(express.json())
