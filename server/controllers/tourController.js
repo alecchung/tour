@@ -99,9 +99,9 @@ export const getAllTours = async (req, res) => {
             .limit(8)
 
         res.status(200).json({
-            success: true,
-            count: tours.length,
-            message: "Found all tours",
+            // success: true,
+            // count: tours.length,
+            // message: "Found all tours",
             data: tours,
         })
     } catch (err) {
