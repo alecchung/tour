@@ -1,1 +1,1 @@
-export const BASE_URL = process.env.SERVER_URL
+export const BASE_URL = 'https://alec-tour-api.onrender.com'
