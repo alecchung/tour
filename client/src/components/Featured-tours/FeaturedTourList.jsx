@@ -9,7 +9,7 @@ const FeaturedTourList = () => {
     data: featuredTours,
     loading,
     error
-  } = useFetch('https://alec-tour-api.onrender.com/api/v1/tours')
+  } = useFetch(`${BASE_URL}/api/v1/tours`)
   
   return (
     <>
