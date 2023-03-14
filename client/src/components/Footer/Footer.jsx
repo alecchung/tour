@@ -5,23 +5,8 @@ import './footer.css'
 
 const quick__links = [
   {
-    path: "/gallery",
-    display: "Gallery",
-  },
-  {
-    path: "/about",
-    display: "About",
-  },
-  {
     path: "/tours",
     display: "Tours",
-  },
-]
-
-const quick__links2 = [
-  {
-    path: "/gallery",
-    display: "Gallery",
   },
   {
     path: "/login",
@@ -41,7 +26,7 @@ const Footer = () => {
     <footer className='footer'>
       <Container>
         <Row>
-          <Col lg='3'>
+          <Col lg='6'>
             <div className="logo">
               <img src={logo} alt="logo" />
               <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
@@ -61,20 +46,11 @@ const Footer = () => {
               </div>
             </div>
           </Col>
-          <Col lg='3'>
-            <h5 className='footer__link-title'>Discover</h5>
-            <ListGroup className="footer__quick-links">
-              {quick__links.map((item, index) => (
-                <ListGroupItem key={index} className="ps-0 border-0">
-                  <Link to={item.path}>{item.display}</Link>
-                </ListGroupItem>
-              ))}
-            </ListGroup>
-          </Col>
+          
           <Col lg='3'>
             <h5 className='footer__link-title'>Quick Links</h5>
             <ListGroup className="footer__quick-links">
-              {quick__links2.map((item, index) => (
+              {quick__links.map((item, index) => (
                 <ListGroupItem key={index} className="ps-0 border-0">
                   <Link to={item.path}>{item.display}</Link>
                 </ListGroupItem>
