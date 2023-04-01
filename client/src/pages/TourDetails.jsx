@@ -25,7 +25,7 @@ const TourDetails = () => {
 
   const options = { day: 'numeric', month: 'long', year: 'numeric' }
 
-  const submitHandler = async e => {
+  const submitHandler = async (e) => {
     e.preventDefault()
     const reviewText = reviewMsgRef.current.value
 

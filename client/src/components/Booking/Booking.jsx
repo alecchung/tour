@@ -22,14 +22,14 @@ const Booking = ({ tour, avgRating }) => {
         bookAt: ''
     })
 
-    const handleChange = e => {
+    const handleChange = (e) => {
         setBooking(prev => ({ ...prev, [e.target.id]: e.target.value }));
     }
 
     const servieFee = 10
     const totalAmount = Number(price) * Number(booking.guestSize) + Number(servieFee)
 
-    const handleClick = async e => {
+    const handleClick = async (e) => {
 
         e.preventDefault()
 
