@@ -88,7 +88,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: var(--secondary-color);
+  background: var(--primary-color);
   color: #eee;
   font-size: 1.6rem;
   font-weight: 600;
