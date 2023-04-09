@@ -95,7 +95,7 @@ const Home = () => {
                   Minus tempora neque iure.  Maxus tempora neque iure.
                 </p>
               </div>
-
+            </Col>   <Col lg='6'>
               <div className="counter__wrapper d-flex align-items-center gap-5">
                 <div className="counter__box">
                   <span>22k+</span>
@@ -111,11 +111,11 @@ const Home = () => {
                 </div>
               </div>
             </Col>
-            <Col lg='6'>
+            {/* <Col lg='6'>
               <div className="experience__img">
                 <img src={experienceImg} alt="experience" />
               </div>
-            </Col>
+            </Col> */}
           </Row>
         </Container>
       </section>
